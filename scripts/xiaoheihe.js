@@ -1,5 +1,5 @@
 const body = $response.body
-const result = ''
+let result = ''
 const onload = 'account/tips_state'
 const banner = 'bbs/app/feeds/news'
 if (!body) {
