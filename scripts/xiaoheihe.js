@@ -75,7 +75,7 @@ if (!body) {
         {
           tag: {
             mask: 0,
-            key: 'topic_18745',
+            key: 'event ',
           },
           pic_url:
             'https://cdn.max-c.com/heybox/dailynews/img/fa8928d8fa5a73dde6fab2a4e0056b0f.png',
