@@ -24,7 +24,7 @@ if (!body) {
         tab_config.first_tab.entry = [
           {
             key: '/bbs/recommend',
-            title: '推荐',
+            title: '推111荐',
           },
         ]
       }
