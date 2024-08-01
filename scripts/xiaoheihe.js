@@ -25,7 +25,7 @@ if (!body) {
         tab_config.first_tab.entry = [
           {
             key: '/bbs/recommend',
-            title: '推111荐',
+            title: '推荐',
           },
         ]
       }
@@ -35,8 +35,10 @@ if (!body) {
     if ($request.url.includes(banner)) {
       const first = obj.result?.links[0]
       const { banners } = first
-      const newBanners = banners.filter(item => !item.ad_report)
-      first.banners = newBanners
+      if (banners) {
+        const newBanners = banners.filter(item => !item.ad_report)
+        first.banners = newBanners
+      }
     }
     // nav
     // @ts-ignore
