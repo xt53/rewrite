@@ -41,7 +41,50 @@ if (!body) {
     // nav
     // @ts-ignore
     if ($request.url.includes(nav)) {
-      obj.result.options[0].children = [obj.result.options[0].children[0]]
+      obj.result.options[0].children = [
+        {
+          tag: {
+            tag: '全部',
+            key: -1,
+          },
+          pic_url:
+            'https://cdn.max-c.com/heybox/dailynews/img/7388a5e596e05b027fa997a8f43ec120.png',
+          topic_id: -1,
+          name: '全部',
+        },
+        {
+          tag: {
+            tag: '热榜',
+            key: 'hot_news',
+          },
+          pic_url:
+            'https://imgheybox.max-c.com/oa/2022/09/29/e47f9595e41189708cde0d504bd827de.png',
+          topic_id: -1,
+          name: '热榜',
+        },
+        {
+          tag: {
+            mask: 0,
+            key: 'HotSpots',
+          },
+          pic_url:
+            'https://cdn.max-c.com/heybox/dailynews/img/b3c6f2f9af2eea0d97ca0ef811d9821c.png',
+          name: '盒友杂谈',
+          topic_id: 7214,
+        },
+        {
+          pic_url:
+            'https://cdn.max-c.com/heybox/dailynews/img/fa8928d8fa5a73dde6fab2a4e0056b0f.png',
+          name: '数码硬件',
+          topic_id: 18745,
+        },
+        {
+          pic_url:
+            'https://i1.max-c.com/imgx/2022/04/26/6862fa12c1cf40d5b4f3c53b6c9c758f1650947284.ico',
+          name: '双人成行',
+          topic_id: 426025,
+        },
+      ]
     }
     result = JSON.stringify(obj)
     // @ts-ignore
