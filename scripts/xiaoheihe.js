@@ -64,7 +64,7 @@ if (!body) {
         },
         {
           tag: {
-            mask: 1,
+            mask: 0,
             key: 'HotSpots',
           },
           pic_url:
@@ -75,7 +75,7 @@ if (!body) {
         {
           tag: {
             mask: 0,
-            key: 'test',
+            key: 'topic_18745',
           },
           pic_url:
             'https://cdn.max-c.com/heybox/dailynews/img/fa8928d8fa5a73dde6fab2a4e0056b0f.png',
@@ -83,6 +83,10 @@ if (!body) {
           topic_id: 18745,
         },
         {
+          tag: {
+            mask: 0,
+            key: 'topic_426025',
+          },
           pic_url:
             'https://i1.max-c.com/imgx/2022/04/26/6862fa12c1cf40d5b4f3c53b6c9c758f1650947284.ico',
           name: '双人成行',
