@@ -64,7 +64,7 @@ if (!body) {
         },
         {
           tag: {
-            mask: 0,
+            mask: 1,
             key: 'HotSpots',
           },
           pic_url:
@@ -73,6 +73,10 @@ if (!body) {
           topic_id: 7214,
         },
         {
+          tag: {
+            mask: 0,
+            key: 'test',
+          },
           pic_url:
             'https://cdn.max-c.com/heybox/dailynews/img/fa8928d8fa5a73dde6fab2a4e0056b0f.png',
           name: '数码硬件',
