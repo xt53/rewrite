@@ -4,6 +4,7 @@ const body = $response.body
 let result = ''
 const loadApi = 'account/tips_state'
 const banner = 'bbs/app/feeds/news'
+const nav = 'maxnews/app/setup/favour'
 if (!body) {
   // @ts-ignore
   $done({})
@@ -36,6 +37,11 @@ if (!body) {
       const { banners } = first
       const newBanners = banners.filter(item => !item.ad_report)
       first.banners = newBanners
+    }
+    // nav
+    // @ts-ignore
+    if ($request.url.includes(nav)) {
+      obj.result.options[0].children = [obj.result.options[0].children[0]]
     }
     result = JSON.stringify(obj)
     // @ts-ignore
